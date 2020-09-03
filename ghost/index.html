@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>G.H.O.S.T OS</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <meta author="Alex B" />
+    <meta property="og:image" content="assets/preview.png" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="shortcut icon" href="assets/icons/computer-3.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/win95.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="windows-scrollbar">
+
+    <footer class="taskbar">
+        <div class="row" style="margin-right: 0px;">
+            <div class="col-8">
+                <a class="brand">G.H.O.S.T</a>
+                <a href="http://joshuacompanion.com/" class="btn start-button"><img src="assets/icons/users-1.png"
+                        class="icon-16">Author</a>
+                <a href="https://github.com/jcompanion" class="btn start-button"><img
+                        src="assets/icons/directory_folder_options-5.png" class="icon-16"> GitHub</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <div class="desktop">
+
+        <!-- All Shortcuts -->
+
+        <div class="shortcut" type="button" data-toggle="modal" data-target="#exampleModal">
+            <img src="./assets/icons/directory_closed_cool-0.png">
+            Files
+        </div>
+        <div class="shortcut" type="button" data-toggle="modal" data-target="#exampleModal1">
+            <img src="./assets/icons/recycle_bin_full_cool-0.png">
+            Trash
+        </div>
+        <div class="shortcut" type="button" data-toggle="modal" data-target="#exampleModal2">
+            <img src="./assets/icons/users-2.png">
+            About Us
+        </div>
+        <div class="shortcut" type="button" data-toggle="modal" data-target="#exampleModal3">
+            <img src="./assets/icons/video_-2.png">
+            Videos
+        </div>
+        <div class="shortcut" type="button" data-toggle="modal" data-target="#exampleModal4">
+            <img src="./assets/icons/network_internet_pcs_installer-4.png">
+            Locations
+        </div>
+
+
+
+
+        <!-- Modal -->
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal hide drag" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Files</h5>
+                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/confused_travolta.gif" class="img-fluid">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="modal hide drag" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Modal title</h5>
+                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1>Modal1</h1>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-light fixed-bottom navbar-95">
+        <div class="dropup">
+            <button class="dropbtn"><i class="fas fa-ghost"></i></button>
+            <div class="dropup-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        </div>
+        <p id="clock"></p>
+    </nav>
+
+
+    <!-- Scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
