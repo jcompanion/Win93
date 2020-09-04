@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
     <meta author="Joshua C" />
     <meta property="og:image" content="assets/preview.png" />
+
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="shortcut icon" href="assets/icons/computer-3.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -20,6 +21,7 @@
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
         integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -55,11 +57,11 @@
             <img src="./assets/icons/users-2.png">
             About Us
         </div>
-        <div class="shortcut drag" type="button" data-toggle="modal" data-target="#exampleModal3">
+        <div class="shortcut drag" type="button" data-toggle="modal" data-target="#videoModal">
             <img src="./assets/icons/video_-2.png">
             Videos
         </div>
-        <div class="shortcut drag" type="button" data-toggle="modal" data-target="#exampleModal4">
+        <div class="shortcut drag" type="button" data-toggle="modal" data-target="#mapModal">
             <img src="./assets/icons/network_internet_pcs_installer-4.png">
             Locations
         </div>
@@ -113,7 +115,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h1>Modal1</h1>
+                    <div class="shortcut drag" type="button" data-toggle="modal" data-target="#exampleModal">
+                        <img src="./assets/icons/directory_closed_cool-0.png">
+                        Secret
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -122,20 +127,72 @@
             </div>
         </div>
     </div>
-
     </div>
 
 
 
-    <!-- Footer -->
-    <!-- Navbar -->
+    <div class="modal hide drag" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="Videos">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Videos</h5>
+                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <iframe width="500" height="400" src="https://www.youtube.com/embed/cDxW8lN7nNA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="modal hide drag" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="Maps">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Locations</h5>
+                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div id="map"></div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Footer NAV -->
     <nav class="navbar navbar-light fixed-bottom navbar-95">
         <div class="dropup">
             <button class="dropbtn"><i class="fas fa-ghost"></i></button>
             <div class="dropup-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a id="google" type="button" data-toggle="modal" data-target="#instaModal">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Shut Down</a>
             </div>
         </div>
         </div>
@@ -144,7 +201,9 @@
 
 
     <!-- Scripts -->
-
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3spzDjkrKVv2KnuUd9mD20F73a9YDikk&callback=initMap">
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
