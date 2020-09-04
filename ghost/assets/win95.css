@@ -205,6 +205,7 @@ button:focus{
 /* Desktop */
 .brand {
     color: black !important;
+    padding:0 20px 0 10px;
 }
 .desktop {
     margin: 50px 20px;
