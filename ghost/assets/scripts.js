@@ -55,5 +55,5 @@ function initMap() {
 
 
 
-$(".container1").fadeOut(3000)
+$(".load").fadeOut(3000)
 

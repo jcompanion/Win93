@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 html {
   position: relative;
   max-height: 100vh;
@@ -47,7 +47,7 @@ header .container {
 }
 
 /* Loader */
-.container1 {
+.load {
     height: 100vh;
     width: 100%;
     background: #000000;
@@ -66,14 +66,13 @@ header .container {
     display: flex;
     flex-direction: row;
   }
-@import url(https://fonts.googleapis.com/css?family=Audiowide);
+  
 
 .loading__letter {
   font-size: 88px;
-  font-weight: normal;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-family: "Audiowide";
+  font-family: 'VT323', monospace;
   color: #15ff00;
 }
 @keyframes bounce {
@@ -90,7 +89,6 @@ header .container {
   }
   .loading__letter {
     font-size: 88px;
-    font-weight: normal;
     letter-spacing: 4px;
     text-transform: uppercase;
     animation-name: bounce;
@@ -470,6 +468,7 @@ FOOTER
     margin-right: 0px;
     position: fixed;
     top: 0;
+    
 }
 .taskbar .start-button {
     cursor: pointer;
@@ -483,7 +482,6 @@ FOOTER
 .taskbar .time {
     color:#212529;
     margin-top: 2px;
-   
     text-align: right;
     font-size: 14px;
     margin-right: 0px;
@@ -491,6 +489,8 @@ FOOTER
 #page-content {
     flex: 1 0 auto;
 }
+
+
 /*
 
 ICONS
