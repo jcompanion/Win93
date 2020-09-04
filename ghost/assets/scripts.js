@@ -11,6 +11,7 @@ $(function () {
 });
 
 
+
 $('#exampleModal').modal({
   backdrop: 'static',
   keyboard: true,
@@ -49,4 +50,10 @@ function initMap() {
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({ position: uluru, map: map });
 }
+
+
+
+
+
+$(".container1").fadeOut(3000)
 

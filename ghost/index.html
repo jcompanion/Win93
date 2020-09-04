@@ -23,24 +23,52 @@
         integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 
 
+
+
 </head>
 
+
+
+
+
+
+
+
 <body class="windows-scrollbar">
+
+
+
 
     <div class="taskbar">
         <div class="row" style="margin-right: 0px;">
             <div class="col-8">
                 <a class="brand">G.H.O.S.T OS</a>
-                <a href="http://joshuacompanion.com/" class="btn start-button"><img src="assets/icons/users-1.png"
-                        class="icon-16">Author</a>
-                <a href="https://github.com/jcompanion" class="btn start-button"><img
+                <a href="http://joshuacompanion.com/" class="btn start-button" target="_blank"><img
+                        src="assets/icons/users-1.png" class="icon-16">Author</a>
+                <a href="https://github.com/jcompanion" class="btn start-button" target="_blank"><img
                         src="assets/icons/directory_folder_options-5.png" class="icon-16"> GitHub</a>
             </div>
         </div>
 
     </div>
 
-
+    <!-- Loader -->
+    <div class="container1">
+        <div class="loading">
+            <div class="loading__letter">G</div>
+            <div class="loading__letter">.</div>
+            <div class="loading__letter">H</div>
+            <div class="loading__letter">.</div>
+            <div class="loading__letter">O</div>
+            <div class="loading__letter">.</div>
+            <div class="loading__letter">S</div>
+            <div class="loading__letter">.</div>
+            <div class="loading__letter">T</div>
+            <div class="loading__letter">.</div>
+            <div class="loading__letter">O</div>
+            <div class="loading__letter">S</div>
+        </div>
+    </div>
     <div class="desktop">
 
         <!-- All Shortcuts -->
@@ -53,7 +81,7 @@
             <img src="./assets/icons/recycle_bin_full_cool-0.png">
             Trash
         </div>
-        <div class="shortcut drag" type="button" data-toggle="modal" data-target="#exampleModal2">
+        <div class="shortcut drag" type="button" data-toggle="modal" data-target="#aboutModal">
             <img src="./assets/icons/users-2.png">
             About Us
         </div>
@@ -109,7 +137,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel1">Recycle Bin</h5>
                     <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -130,6 +158,34 @@
     </div>
 
 
+    <div class="modal hide drag" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="About">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">About Us</h5>
+                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="black-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis libero
+                        culpa blanditiis
+                        explicabo, nostrum corporis reiciendis vero aspernatur ex perspiciatis magnam voluptate, enim
+                        nam quisquam aliquam, nisi provident! Quidem, fugiat?</p>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
 
     <div class="modal hide drag" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="Videos">
         <div class="modal-dialog" role="document">
@@ -143,7 +199,7 @@
 
                 <div class="modal-body">
 
-                    <iframe width="500" height="400" src="https://www.youtube.com/embed/cDxW8lN7nNA" frameborder="0"
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/cDxW8lN7nNA" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
